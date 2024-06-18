@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Notícias</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Portal dos Livros</h1>
+            <form>
+                <input type="search" placeholder="Busque no site">
+                <button type="submit">Pesquisar</button>
+            </form>
+        </div>
+        <div class="botao-menu">
+            <button type="button">Abrir Menu</button>
+        </div>
+        <nav class="container">
+            <ul class="menu">
+                <li>
+                    Fantasia
+
+                    <ul class="submenu">
+                        <li>
+                            <a href="#">Cassandra Clare</a>
+                        </li>
+                        <li>
+                            <a href="#">Sarah J Mass</a>
+                        </li>
+                        <li>
+                            <a href="#">Holly Black</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>Romance
+                    <ul class="submenu">
+                        <li>
+                            <a href="#">Kiera Cass</a>
+                        </li>
+                        <li>
+                            <a href="#">Colleen Hoover</a>
+                        </li>
+                        <li>
+                            <a href="#">Paula Pimenta</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="clear"></div>
+        </nav>
+    </header>
+    <div class="container conteudo">
+        <main>
+            <section class="destaque">
+                <h2>Sobre a Loja</h2>
+                <article class="livro">
+                    <a href="#">
+                        <img src="img/ilustracao.jpg">
+                        <h3>
+                            <div>
+                                <p>Bem-vindo à Portal dos Livros, seu destino online para todas as suas necessidades literárias! Nossa loja virtual foi criada com o objetivo de proporcionar aos amantes dos livros uma experiência de compra prática, acessível e inspiradora. Aqui você encontrará uma vasta coleção de livros, desde os clássicos da literatura até os lançamentos mais recentes em diversos gêneros, incluindo ficção, não-ficção, romance, fantasia, autoajuda, e muito mais.</p>
+                            </div>
+                        </h3>
+                    </a>
+                </article>
+            </section>
+            <section >
+                <h2>Mais Vendidos:</h2>
+                <div class="livros">
+                    <article class="livro">
+                        <a href="#">
+                            <img src="img/cidade-dos-ossos.jpg">
+                            <h3>
+                                Primeiro livro da coleção "Os instruimentos Mortais" da Autora Cassandra Clare.
+                            </h3>
+                        </a>
+                    </article>
+                    <article class="livro">
+                        <a href="#">
+                            <img src="img/cidade-das-cinzas.jpg">
+                            <h3>
+                                Segundo livro da coleção "Os instruimentos Mortais" da Autora Cassandra Clare.
+                            </h3>
+                        </a>
+                    </article>
+                    <article class="livro">
+                        <a href="#">
+                            <img src="img/cidade-de-vidro.jpg">
+                            <h3>
+                                Terceiro livro da coleção "Os instruimentos Mortais" da Autora Cassandra Clare.
+                            </h3>
+                        </a>
+                    </article>
+                    <article class="livro">
+                        <a href="#">
+                            <img src="img/cidade-dos-anjos.jpg">
+                            <h3>
+                                Quarto livro da coleção "Os instruimentos Mortais" da Autora Cassandra Clare.
+                            </h3>
+                        </a>
+                    </article>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            $('.botao-menu button').click(function() {
+                $('.menu').slideToggle();
+            })
+        })
+    </script>
+</body>
+</html>
